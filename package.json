@@ -1,0 +1,27 @@
+{
+  "name": "users-api",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Swagger User API",
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "mongoose": "^4.10.1",
+    "swagger-express-mw": "^0.1.0"
+  },
+  "devDependencies": {
+    "should": "^7.1.0",
+    "supertest": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "swagger project test",
+    "deploy": "gcloud app deploy --project users-api-01"  
+  },
+  "engines" : {
+     "node" : ">=0.10.3 <6.10.0" 
+  }
+}
